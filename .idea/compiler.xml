@@ -18,8 +18,8 @@
       <module name="model" options="-parameters" />
       <module name="service-order" options="-parameters" />
       <module name="service-product" options="-parameters" />
-      <module name="services" options="-parameters" />
-      <module name="spring-cloud" options="" />
+      <module name="services" options="" />
+      <module name="spring-cloud" options="-parameters" />
     </option>
   </component>
 </project>
