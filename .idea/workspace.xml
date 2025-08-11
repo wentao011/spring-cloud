@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="nacos配置中心代码提交">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="feign + sentinel-01 异常处理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/OrderMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/OrderMainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/config/OrderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/config/OrderConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/OrderMainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/OrderMainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/resources/application-feign.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application-feign.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-product/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-product/target/classes/com/jd/product/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/target/classes/com/jd/product/controller/ProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +214,8 @@
       <workItem from="1754643175840" duration="590000" />
       <workItem from="1754831291428" duration="6329000" />
       <workItem from="1754903055670" duration="1105000" />
+      <workItem from="1754905154579" duration="2293000" />
+      <workItem from="1754917432826" duration="6697000" />
     </task>
     <task id="LOCAL-00001" summary="nacos简单服务注册">
       <created>1754410284313</created>
@@ -243,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1754578615555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feign + sentinel-01 异常处理">
+      <created>1754904957731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754904957731</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feign + sentinel-01 异常处理">
+      <created>1754905066685</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754905066685</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +278,8 @@
     <MESSAGE value="nacos简单服务注册" />
     <MESSAGE value="nacos注册中心代码提交" />
     <MESSAGE value="nacos配置中心代码提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacos配置中心代码提交" />
+    <MESSAGE value="feign + sentinel-01 异常处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="feign + sentinel-01 异常处理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

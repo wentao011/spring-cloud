@@ -18,6 +18,8 @@ spring:
       transport:
         dashboard: localhost:8080
       eager: true
+      # sentinel种不共用同一个上下文
+      web-context-unify: false
 feign:
   sentinel:
     enabled: true
