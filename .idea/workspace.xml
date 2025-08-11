@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="nacos注册中心代码提交">
-      <change afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/properties/OrderProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="nacos配置中心代码提交">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/OrderMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/OrderMainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/config/OrderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/config/OrderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/OrderMainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/OrderMainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-product/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/target/classes/application.properties" afterDir="false" />
     </list>
@@ -32,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -72,7 +73,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -96,21 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderMainApplication">
-    <configuration name="OrderMainApplication - 2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.jd.order.OrderMainApplication" />
-      <module name="service-order" />
-      <option name="PROGRAM_PARAMETERS" value="--server.port=8001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jd.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ProductMainApplication">
     <configuration name="ProductMainApplication - 2" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.jd.product.ProductMainApplication" />
       <module name="service-product" />
@@ -121,6 +108,38 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jd.order" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.order.WeatherTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jd.order" />
+      <option name="MAIN_CLASS_NAME" value="com.jd.order.WeatherTest" />
+      <option name="METHOD_NAME" value="testCreate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,7 +179,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProductMainApplication - 2" />
-      <item itemvalue="Application.OrderMainApplication - 2" />
+      <item itemvalue="JUnit.WeatherTest.test" />
+      <item itemvalue="JUnit.WeatherTest.testCreate" />
       <item itemvalue="Spring Boot.ModelApplication" />
       <item itemvalue="Spring Boot.ProductMainApplication" />
       <item itemvalue="Spring Boot.OrderMainApplication" />
@@ -169,8 +189,9 @@
       <list>
         <item itemvalue="Spring Boot.OrderMainApplication" />
         <item itemvalue="Spring Boot.ProductMainApplication" />
+        <item itemvalue="JUnit.WeatherTest.testCreate" />
+        <item itemvalue="JUnit.WeatherTest.test" />
         <item itemvalue="Application.ProductMainApplication - 2" />
-        <item itemvalue="Application.OrderMainApplication - 2" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +215,12 @@
       <workItem from="1754485175742" duration="590000" />
       <workItem from="1754541816426" duration="872000" />
       <workItem from="1754546973265" duration="5975000" />
-      <workItem from="1754575454826" duration="3106000" />
+      <workItem from="1754575454826" duration="3156000" />
+      <workItem from="1754626962849" duration="272000" />
+      <workItem from="1754627263611" duration="3055000" />
+      <workItem from="1754643175840" duration="590000" />
+      <workItem from="1754831291428" duration="6329000" />
+      <workItem from="1754903055670" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="nacos简单服务注册">
       <created>1754410284313</created>
@@ -210,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1754574727267</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nacos配置中心代码提交">
+      <created>1754578615554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754578615555</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +268,8 @@
     <MESSAGE value="单机nacos服务注册" />
     <MESSAGE value="nacos简单服务注册" />
     <MESSAGE value="nacos注册中心代码提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="nacos注册中心代码提交" />
+    <MESSAGE value="nacos配置中心代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="nacos配置中心代码提交" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

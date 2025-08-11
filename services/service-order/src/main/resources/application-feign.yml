@@ -1,0 +1,25 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            logger-level: full
+            connect-timeout: 1000
+            read-timeout: 2000
+          service-product:
+            logger-level: full
+            connect-timeout: 3000
+            read-timeout: 5000
+            # 局部拦截器
+            request-interceptors:
+              - com.jd.order.interceptor.XTokenRequestIntercepter
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      eager: true
+feign:
+  sentinel:
+    enabled: true
+
+

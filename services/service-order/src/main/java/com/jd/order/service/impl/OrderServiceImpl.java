@@ -1,7 +1,10 @@
 package com.jd.order.service.impl;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.jd.bean.Order;
 import com.jd.bean.Product;
+import com.jd.order.feign.ProductFeignClient;
 import com.jd.order.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +28,14 @@ public class OrderServiceImpl implements OrderService {
     RestTemplate restTemplate;
     /**
      * 阶段2 使用loadBalancerClient-负载均衡 改造
-     * */
+     */
     @Autowired
     LoadBalancerClient loadBalancerClient;
+
+    @Autowired
+    ProductFeignClient productFeignClient;
+
+    @SentinelResource(value = "createOrder", blockHandler = "createOrderFallback")
     @Override
     public Order createOrder(Long userId, Long productId) {
         // 阶段1
@@ -37,8 +45,10 @@ public class OrderServiceImpl implements OrderService {
         // Product product = this.getProductFromRemoteWithLoadBalance(productId);
 
         // 阶段3
-        Product product = this.getProductFromRemoteWithLoadBalanceAnnotation(productId);
+        // Product product = this.getProductFromRemoteWithLoadBalanceAnnotation(productId);
 
+        // 阶段4 使用feign接口的形式调用
+        Product product = productFeignClient.getProductById(productId);
         Order order = new Order();
         order.setId(1L);
         // 总金额=价格*数量
@@ -50,6 +60,16 @@ public class OrderServiceImpl implements OrderService {
         order.setAddress("火星");
         // 远程查询商品列表
         order.setProductList(Arrays.asList(product));
+        return order;
+    }
+
+    public Order createOrderFallback(Long userId, Long productId, BlockException e) {
+        Order order = new Order();
+        order.setId(0L);
+        order.setTotalAmount(new BigDecimal("0"));
+        order.setUserId(userId);
+        order.setNickName("未知用户");
+        order.setAddress("异常信息" + e.getClass());
         return order;
     }
 

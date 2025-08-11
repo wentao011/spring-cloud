@@ -41,6 +41,18 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!--sentinel-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <!--openfeign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
         <!--nacos配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
