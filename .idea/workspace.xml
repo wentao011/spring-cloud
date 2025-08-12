@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="feign + sentinel-01 异常处理">
+    <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/GatewayMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/filter/OnceTokenGatewayFilterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/predicate/VipRoutePredicateFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-route.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/resources/application-feign.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/resources/application-feign.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/src/main/java/com/jd/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-product/target/classes/com/jd/product/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-product/target/classes/com/jd/product/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/controller/OrderController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,21 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductMainApplication">
-    <configuration name="ProductMainApplication - 2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.jd.product.ProductMainApplication" />
-      <module name="service-product" />
-      <option name="PROGRAM_PARAMETERS" value="--server.port=9001" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jd.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.GatewayMainApplication">
     <configuration name="WeatherTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-order" />
       <extension name="coverage">
@@ -133,6 +126,19 @@
       <option name="MAIN_CLASS_NAME" value="com.jd.order.WeatherTest" />
       <option name="METHOD_NAME" value="testCreate" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jd.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jd.gateway.GatewayMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,20 +177,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ProductMainApplication - 2" />
       <item itemvalue="JUnit.WeatherTest.test" />
       <item itemvalue="JUnit.WeatherTest.testCreate" />
       <item itemvalue="Spring Boot.ModelApplication" />
       <item itemvalue="Spring Boot.ProductMainApplication" />
       <item itemvalue="Spring Boot.OrderMainApplication" />
+      <item itemvalue="Spring Boot.GatewayMainApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayMainApplication" />
         <item itemvalue="Spring Boot.OrderMainApplication" />
         <item itemvalue="Spring Boot.ProductMainApplication" />
         <item itemvalue="JUnit.WeatherTest.testCreate" />
         <item itemvalue="JUnit.WeatherTest.test" />
-        <item itemvalue="Application.ProductMainApplication - 2" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +221,8 @@
       <workItem from="1754831291428" duration="6329000" />
       <workItem from="1754903055670" duration="1105000" />
       <workItem from="1754905154579" duration="2293000" />
-      <workItem from="1754917432826" duration="6697000" />
+      <workItem from="1754917432826" duration="7100000" />
+      <workItem from="1755004963667" duration="5422000" />
     </task>
     <task id="LOCAL-00001" summary="nacos简单服务注册">
       <created>1754410284313</created>
@@ -252,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1754905066685</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sentinel-02 规则（流控、熔断降级、热点参数）">
+      <created>1754926814842</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754926814842</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +293,8 @@
     <MESSAGE value="nacos注册中心代码提交" />
     <MESSAGE value="nacos配置中心代码提交" />
     <MESSAGE value="feign + sentinel-01 异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="feign + sentinel-01 异常处理" />
+    <MESSAGE value="sentinel-02 规则（流控、熔断降级、热点参数）" />
+    <option name="LAST_COMMIT_MESSAGE" value="sentinel-02 规则（流控、熔断降级、热点参数）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

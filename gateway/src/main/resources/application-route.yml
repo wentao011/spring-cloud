@@ -1,0 +1,45 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: '*'
+            allowedHeaders: '*'
+            allowedMethods: '*'
+      routes:
+        - id: bing
+          uri: https://cn.bing.com/
+          predicates:
+            - name: Path
+              args:
+                pattern: /search
+                matchTrailingSlash: true
+            - name: Query
+              args:
+                param: q
+                regexp: haha
+        #自定义的VipRoutePredicateFactory
+            - name: Vip
+              args:
+                param: user
+                value: lei
+        - id: order
+          uri: lb://service-order
+          predicates:
+            - name: Path
+              args:
+                pattern: /api/order/**
+                matchTrailingSlash: true
+        #            - Path=/api/order/**
+          filters:
+            - RewritePath=/api/order/?(?<segment>.*), /$\{segment}
+            - OnceToken=X-Response-Token, jwt
+        - id: product
+          uri: lb://service-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/product/?(?<segment>.*), /$\{segment}
+      default-filters:
+        - AddResponseHeader=X-Response-abc, 123
