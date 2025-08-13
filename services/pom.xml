@@ -26,6 +26,10 @@
     <modules>
         <module>service-order</module>
         <module>service-product</module>
+        <module>seata-account</module>
+        <module>seata-storage</module>
+        <module>seata-order</module>
+        <module>seata-business</module>
     </modules>
 
     <properties>
@@ -39,6 +43,11 @@
             <groupId>com.jd</groupId>
             <artifactId>model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
         </dependency>
 
         <!--sentinel-->

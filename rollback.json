@@ -1,0 +1,77 @@
+{
+  "@class": "org.apache.seata.rm.datasource.undo.BranchUndoLog",
+  "xid": "192.168.233.1:8091:5531102980992626694",
+  "branchId": 5531102980992626696,
+  "sqlUndoLogs": [
+    "java.util.ArrayList",
+    [
+      {
+        "@class": "org.apache.seata.rm.datasource.undo.SQLUndoLog",
+        "sqlType": "UPDATE",
+        "tableName": "account_tbl",
+        "beforeImage": {
+          "@class": "org.apache.seata.rm.datasource.sql.struct.TableRecords",
+          "tableName": "account_tbl",
+          "rows": [
+            "java.util.ArrayList",
+            [
+              {
+                "@class": "org.apache.seata.rm.datasource.sql.struct.Row",
+                "fields": [
+                  "java.util.ArrayList",
+                  [
+                    {
+                      "@class": "org.apache.seata.rm.datasource.sql.struct.Field",
+                      "name": "id",
+                      "keyType": "PRIMARY_KEY",
+                      "type": 4,
+                      "value": 1
+                    },
+                    {
+                      "@class": "org.apache.seata.rm.datasource.sql.struct.Field",
+                      "name": "money",
+                      "keyType": "NULL",
+                      "type": 4,
+                      "value": 10000
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        },
+        "afterImage": {
+          "@class": "org.apache.seata.rm.datasource.sql.struct.TableRecords",
+          "tableName": "account_tbl",
+          "rows": [
+            "java.util.ArrayList",
+            [
+              {
+                "@class": "org.apache.seata.rm.datasource.sql.struct.Row",
+                "fields": [
+                  "java.util.ArrayList",
+                  [
+                    {
+                      "@class": "org.apache.seata.rm.datasource.sql.struct.Field",
+                      "name": "id",
+                      "keyType": "PRIMARY_KEY",
+                      "type": 4,
+                      "value": 1
+                    },
+                    {
+                      "@class": "org.apache.seata.rm.datasource.sql.struct.Field",
+                      "name": "money",
+                      "keyType": "NULL",
+                      "type": 4,
+                      "value": 9982
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ]
+}

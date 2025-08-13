@@ -5,18 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3af53426-10ce-48e2-8f68-02d7b7f4e46b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/GatewayMainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/filter/OnceTokenGatewayFilterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/jd/gateway/predicate/VipRoutePredicateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-route.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adsadkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollback.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/SeataAccountMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/bean/AccountTbl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/controller/AccountRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/mapper/AccountTblMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/java/com/atguigu/account/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/src/main/resources/mapper/AccountTblMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/SeataAccountMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/bean/AccountTbl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/controller/AccountRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/mapper/AccountTblMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/com/atguigu/account/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-account/target/classes/mapper/AccountTblMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/SeataBusinessMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/controller/PurchaseRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/feign/OrderFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/feign/StorageFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/service/BusinessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/service/impl/BusinessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/SeataBusinessMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/controller/PurchaseRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/feign/OrderFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/feign/StorageFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/service/BusinessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/com/atguigu/business/service/impl/BusinessServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-business/target/classes/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/SeataOrderMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/bean/OrderTbl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/controller/OrderRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/feign/AccountFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/mapper/OrderTblMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/src/main/resources/mapper/OrderTblMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/SeataOrderMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/bean/OrderTbl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/controller/OrderRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/feign/AccountFeignClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/mapper/OrderTblMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/com/atguigu/order/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-order/target/classes/mapper/OrderTblMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/SeataStorageMainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/bean/StorageTbl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/controller/StorageRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/mapper/StorageTblMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/java/com/atguigu/storage/service/impl/StorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/src/main/resources/mapper/StorageTblMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/SeataStorageMainApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/bean/StorageTbl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/controller/StorageRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/mapper/StorageTblMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/service/StorageService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/com/atguigu/storage/service/impl/StorageServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/seata-storage/target/classes/mapper/StorageTblMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/src/main/java/com/jd/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/services/service-order/target/classes/com/jd/order/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,19 +140,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/seata-storage/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.gitee.ui.GiteeSettingsConfigurable" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\lift\spring-cloud\services\seata-storage\src\main\resources" />
       <recent name="D:\workspace\spring-cloud\services\service-order\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\lift\spring-cloud\services\seata-account\src\main\resources" />
+      <recent name="D:\lift\spring-cloud\services\seata-account\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jd.product" />
@@ -97,52 +174,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayMainApplication">
-    <configuration name="WeatherTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jd.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jd.order" />
-      <option name="MAIN_CLASS_NAME" value="com.jd.order.WeatherTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherTest.testCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jd.order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jd.order" />
-      <option name="MAIN_CLASS_NAME" value="com.jd.order.WeatherTest" />
-      <option name="METHOD_NAME" value="testCreate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jd.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jd.gateway.GatewayMainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.OrderMainApplication">
     <configuration name="ModelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="model" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jd.model.ModelApplication" />
@@ -163,34 +195,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-product" />
+    <configuration name="SeataAccountMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-account" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jd.product.*" />
+          <option name="PATTERN" value="com.atguigu.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jd.product.ProductMainApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.account.SeataAccountMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataBusinessMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.business.SeataBusinessMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataOrderMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.order.SeataOrderMainApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataStorageMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.storage.SeataStorageMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.WeatherTest.test" />
-      <item itemvalue="JUnit.WeatherTest.testCreate" />
       <item itemvalue="Spring Boot.ModelApplication" />
-      <item itemvalue="Spring Boot.ProductMainApplication" />
+      <item itemvalue="Spring Boot.SeataAccountMainApplication" />
+      <item itemvalue="Spring Boot.SeataBusinessMainApplication" />
+      <item itemvalue="Spring Boot.SeataOrderMainApplication" />
+      <item itemvalue="Spring Boot.SeataStorageMainApplication" />
       <item itemvalue="Spring Boot.OrderMainApplication" />
-      <item itemvalue="Spring Boot.GatewayMainApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayMainApplication" />
+        <item itemvalue="Spring Boot.SeataOrderMainApplication" />
+        <item itemvalue="Spring Boot.SeataBusinessMainApplication" />
+        <item itemvalue="Spring Boot.SeataStorageMainApplication" />
+        <item itemvalue="Spring Boot.SeataAccountMainApplication" />
         <item itemvalue="Spring Boot.OrderMainApplication" />
-        <item itemvalue="Spring Boot.ProductMainApplication" />
-        <item itemvalue="JUnit.WeatherTest.testCreate" />
-        <item itemvalue="JUnit.WeatherTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +293,10 @@
       <workItem from="1754903055670" duration="1105000" />
       <workItem from="1754905154579" duration="2293000" />
       <workItem from="1754917432826" duration="7100000" />
-      <workItem from="1755004963667" duration="5422000" />
+      <workItem from="1755004963667" duration="7596000" />
+      <workItem from="1755016113402" duration="31000" />
+      <workItem from="1755054810769" duration="9308000" />
+      <workItem from="1755095363510" duration="2577000" />
     </task>
     <task id="LOCAL-00001" summary="nacos简单服务注册">
       <created>1754410284313</created>
@@ -266,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1754926814842</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="gateway相关代码">
+      <created>1755014066625</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1755014066625</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +375,29 @@
     <MESSAGE value="nacos配置中心代码提交" />
     <MESSAGE value="feign + sentinel-01 异常处理" />
     <MESSAGE value="sentinel-02 规则（流控、熔断降级、热点参数）" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentinel-02 规则（流控、熔断降级、热点参数）" />
+    <MESSAGE value="gateway相关代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="gateway相关代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/service/impl/BusinessServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/seata-business/src/main/java/com/atguigu/business/service/impl/BusinessServiceImpl.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/services/seata-order/src/main/java/com/atguigu/order/service/impl/OrderServiceImpl.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
